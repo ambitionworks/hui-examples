@@ -1,5 +1,10 @@
 # Hui Examples
 
-More coming. For now:
+`cd` in to a subdirectory, then:
 
-`cd kitchensink && composer i && npm i && npm run dev && php artisan serve`
+```bash
+composer i &&
+    npm i &&
+    npm run dev &&
+    php artisan serve
+```
