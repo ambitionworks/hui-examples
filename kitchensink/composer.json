@@ -7,15 +7,6 @@
         "laravel"
     ],
     "license": "MIT",
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../../hui",
-            "options": {
-                "symlink": true
-            }
-        }
-    ],
     "require": {
         "php": "^7.3|^8.0",
         "ambitionworks/hui": "dev-main",
