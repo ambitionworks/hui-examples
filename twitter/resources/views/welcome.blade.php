@@ -30,42 +30,38 @@
                     </x-hui-row>
                     <x-hui-col class="flex-grow">
                         <x-hui-list class="space-y-2">
-                            <x-hui-list.item class="inline-flex group align-middle rounded-full px-4 py-2 hover:bg-gray-700">
+                            <x-hui-list.item class="inline-flex group align-middle rounded-full px-4 py-2 hover:bg-gray-700 transition duration-500">
                                 <svg class="inline-block mr-2 h-8 w-8 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                                 </svg>
                                 <x-hui-text class="text-blue-600 mt-1" span b>Home</x-hui-text>
                             </x-hui-list.item>
-                            <x-hui-list.item class="inline-flex group align-middle rounded-full px-4 py-2 hover:bg-gray-700">
+                            <x-hui-list.item class="inline-flex group align-middle rounded-full px-4 py-2 hover:bg-gray-700 transition duration-500">
                                 <svg class="inline-block mr-2 h-8 w-8 group-hover:text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14" />
                                 </svg>
                                 <x-hui-text class="group-hover:text-blue-600 mt-1" span b>Explore</x-hui-text>
                             </x-hui-list.item>
-                            <x-hui-list.item class="inline-flex group align-middle rounded-full px-4 py-2 hover:bg-gray-700">
+                            <x-hui-list.item class="inline-flex group align-middle rounded-full px-4 py-2 hover:bg-gray-700 transition duration-500">
                                 <svg class="inline-block mr-2 h-8 w-8 group-hover:text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
                                 </svg>
                                 <x-hui-text class="group-hover:text-blue-600 mt-1" span b>Notifications</x-hui-text>
                             </x-hui-list.item>
-                            <x-hui-list.item class="inline-flex group align-middle rounded-full px-4 py-2 hover:bg-gray-700">
+                            <x-hui-list.item class="inline-flex group align-middle rounded-full px-4 py-2 hover:bg-gray-700 transition duration-500">
                                 <svg class="inline-block mr-2 h-8 w-8 group-hover:text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
                                 <x-hui-text class="group-hover:text-blue-600 mt-1" span b>Messages</x-hui-text>
                             </x-hui-list.item>
                         </x-hui-list>
-                        <x-hui-button class="m-2 rounded-full bg-blue-700 border-blue-700 hover:text-gray-50">Tweet</x-hui-button>
+                        <x-hui-button class="m-2 mt-8 rounded-full bg-blue-700 border-blue-700 hover:text-gray-50">Tweet</x-hui-button>
                     </x-hui-col>
                     <x-hui-row class="mb-4">
-                        <x-hui-popover position="tc">
+                        <x-hui-popover position="tc" contentClass="pb-2">
                             <x-slot name="handle">
                                 <x-hui-row class="space-x-2 text-sm">
-                                    <div class="flex items-center text-gray-400 justify-center bg-gray-700 h-12 w-12 rounded-full">
-                                        <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                        </svg>
-                                    </div>
+                                    <x-avatar bg="bg-gray-900" text="text-gray-600" />
                                     <div>
                                         <x-hui-text b>Example User</x-hui-text>
                                         <x-hui-text class="text-gray-300">@user</x-hui-text>
@@ -75,11 +71,7 @@
                             <x-hui-list class="bg-gray-900 rounded-lg w-64 text-sm shadow-lg">
                                 <x-hui-list.item class="p-4 hover:bg-gray-600 rounded-t-lg">
                                     <x-hui-row class="space-x-2 text-sm">
-                                        <div class="flex items-center text-gray-400 justify-center bg-gray-800 h-12 w-12 rounded-full">
-                                            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                            </svg>
-                                        </div>
+                                        <x-avatar bg="bg-gray-800" text="text-gray-600" />
                                         <div class="flex-grow">
                                             <x-hui-text b>Example User</x-hui-text>
                                             <x-hui-text class="text-gray-300">@user</x-hui-text>
@@ -99,9 +91,51 @@
                         </x-hui-popover>
                     </x-hui-row>
                 </x-hui-col>
-                <x-hui-col class="flex-grow" size=6></x-hui-col>
+                <x-hui-col class="flex-grow" size=6>
+                    <x-hui-row class="border-b border-gray-600 p-4">
+                        <x-hui-col class="flex-grow">
+                            <x-hui-text size="2xl" h1>Latest Tweets</x-hui-text>
+                        </x-hui-col>
+                        <x-hui-col class="text-blue-500 justify-center">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                            </svg>
+                        </x-hui-col>
+                    </x-hui-row>
+                    <x-hui-row class="border-b border-gray-600 p-4 space-x-4">
+                        <x-hui-col><x-avatar bg="bg-gray-900" text="text-gray-600" /></x-hui-col>
+                        <x-hui-col class="flex-grow">
+                            <input type="text" class="w-full bg-gray-800 text-lg focus:outline-none" placeholder="What's happening?">
+                            <x-hui-divider class="border-gray-600" />
+                            <x-hui-row>
+                                <x-hui-col class="flex-grow justify-center">
+                                    <x-hui-row class="space-x-1">
+                                        <div class="rounded-full p-1 hover:bg-gray-700">
+                                            <svg class="h-6 w-6 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                            </svg>
+                                        </div>
+                                        <div class="rounded-full p-1 hover:bg-gray-700">
+                                            <svg class="h-6 w-6 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                            </svg>
+                                        </div>
+                                        <div class="rounded-full p-1 hover:bg-gray-700">
+                                            <svg class="h-6 w-6 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                            </svg>
+                                        </div>
+                                    </x-hui-row>
+                                </x-hui-col>
+                                <x-hui-col>
+                                    <x-hui-button class="rounded-full bg-blue-700 border-blue-700 hover:text-gray-50">Tweet</x-hui-button>
+                                </x-hui-col>
+                            </x-hui-row>
+                        </x-hui-col>
+                    </x-hui-row>
+                </x-hui-col>
                 <x-hui-col class="flex-grow p-4 px-6 space-y-4" size=4>
-                    <x-hui-popover contentClass="w-full">
+                    <x-hui-popover contentClass="w-full pt-2">
                         <x-slot name="handle">
                             <div class="relative">
                                 <div class="absolute inset-y-0 left-0 flex items-center ml-3">
@@ -229,14 +263,10 @@
                         <x-hui-divider class="border-gray-600" space=0 />
                         <x-hui-list.item class="py-2 px-3 hover:bg-gray-600 transition">
                             <x-hui-row class="space-x-2 text-sm">
-                                <x-hui-popover hover position="br" class="flex-grow" contentClass="w-64">
+                                <x-hui-popover hover position="br" class="flex-grow" contentClass="w-64 pt-2">
                                     <x-slot name="handle">
                                         <div class="flex space-x-2">
-                                            <div class="flex items-center text-gray-400 justify-center bg-gray-800 h-12 w-12 rounded-full">
-                                                <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                                </svg>
-                                            </div>
+                                            <x-avatar bg="bg-gray-800" text="text-gray-600" />
                                             <div>
                                                 <x-hui-text b>Another User</x-hui-text>
                                                 <x-hui-text class="text-gray-300">@another</x-hui-text>
@@ -246,11 +276,7 @@
                                     <x-hui-col class="space-y-2 bg-gray-900 rounded-lg text-sm shadow-lg p-3">
                                         <x-hui-row>
                                             <x-hui-col size=6>
-                                                <div class="flex items-center text-gray-400 justify-center bg-gray-800 h-12 w-12 rounded-full">
-                                                    <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                                    </svg>
-                                                </div>
+                                                <x-avatar bg="bg-gray-800" text="text-gray-600" />
                                             </x-hui-col>
                                             <x-hui-col class="items-end" size=6><x-hui-button class="rounded-full border-blue-500 hover:border-blue-500 text-blue-500">Follow</x-hui-button></x-hui-col>
                                         </x-hui-row>
