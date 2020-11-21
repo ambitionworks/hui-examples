@@ -17,6 +17,8 @@ module.exports = {
       colors: {
         gray: colors.blueGray,
         blue: colors.blue,
+        green: colors.green,
+        pink: colors.pink,
       },
       extend: {
         inset: {
