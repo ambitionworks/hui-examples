@@ -28,7 +28,7 @@
                             </svg>
                         </x-hui-button>
                     </x-hui-row>
-                    <x-hui-col class="flex-grow">
+                    <x-hui-col class="flex-grow mr-2">
                         <x-hui-list class="flex flex-col space-y-2">
                             <x-hui-list.item class="inline-flex group align-middle rounded-full px-4 py-2 hover:bg-gray-700 transition duration-500">
                                 <svg class="inline-block mr-2 h-8 w-8 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
